@@ -7,7 +7,7 @@
     "dev:api": "nodemon --exec ts-node src/index.ts --api",
     "build": "npx tsc",
     "start" : "node ./dist/index.js",
-    "postinstall": "echo 'Listing files in dist/'; ls -la dist" 
+  "postinstall": "echo 'building'; tsc && ls -la dist"
   },
   "keywords": [],
   "author": "", 
